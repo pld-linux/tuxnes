@@ -9,7 +9,7 @@ Source0:	http://telia.dl.sourceforge.net/sourceforge/tuxnes/%{name}-%{version}.t
 URL:		http://tuxnes.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
+ExclusiveArch:	%{ix86}
 %define			_prefix		/usr/X11R6
 
 %description
