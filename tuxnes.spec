@@ -23,16 +23,16 @@ TuxNES jest emulatorem 8-bitowego systemu rozrywki Nintendo.
 
 %build
 %configure2_13
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
-gzip -9nf README AUTHORS BUGS CHANGES COPYING NEWS THANKS
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README AUTHORS BUGS CHANGES COPYING NEWS THANKS
 %attr(755,root,root) %{_bindir}/*
