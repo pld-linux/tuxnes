@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://telia.dl.sourceforge.net/sourceforge/tuxnes/%{name}-%{version}.tar.gz
+# Source0-md5:	5db0cd42dfdff3e681805e93b4867c43
 URL:		http://tuxnes.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
