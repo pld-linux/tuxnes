@@ -3,7 +3,7 @@ Summary(pl):	tuxnes - linuksowy emulator systemu Nintendo
 Name:		tuxnes
 Version:	0.75
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	5db0cd42dfdff3e681805e93b4867c43
@@ -27,12 +27,13 @@ TuxNES jest emulatorem 8-bitowego systemu rozrywki Nintendo.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	 DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README AUTHORS BUGS CHANGES NEWS THANKS
+%doc README AUTHORS BUGS ChangeLog CHANGES NEWS THANKS
 %attr(755,root,root) %{_bindir}/*
