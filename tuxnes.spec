@@ -10,7 +10,6 @@ URL:		http://tuxnes.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:	%{ix86}
-%define			_prefix		/usr/X11R6
 
 %description
 TuxNES is an emulator for the 8-bit Nintendo Entertainment System.
