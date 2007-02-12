@@ -1,5 +1,5 @@
 Summary:	tuxnes - Linux Nintendo Entertainment System emulator
-Summary(pl):	tuxnes - linuksowy emulator systemu Nintendo
+Summary(pl.UTF-8):   tuxnes - linuksowy emulator systemu Nintendo
 Name:		tuxnes
 Version:	0.75
 Release:	1
@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 TuxNES is an emulator for the 8-bit Nintendo Entertainment System.
 
-%description -l pl
+%description -l pl.UTF-8
 TuxNES jest emulatorem 8-bitowego systemu rozrywki Nintendo.
 
 %prep
